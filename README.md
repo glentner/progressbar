@@ -54,13 +54,15 @@ Examples
 Stream log messages from directory:
 
 ```sh
-ls messages/*.gz | sort | xargs pb | gunzip | ...
+$ ls messages/*.gz | sort | xargs pb | gunzip | grep -E '^2023-' | ...
+messages/myapp.20230713.gz:  23%|█████            | 290M/1.24G [00:19<01:29, 11.4MB/s]
 ```
 
 Stream 1 billion rows from file ([https://1brc.dev](https://1brc.dev)):
 
-```
-pb measurements.txt -l -t 1B | ./1brc -
+```sh
+$ pb measurements.txt -l -t 1B | ./1brc.sh
+measurements.txt:  37%|███████████▏           | 371M/1.00G [00:05<00:09, 69.3MLines/s]
 ```
 
 Contributing
