@@ -20,7 +20,6 @@ from cmdkit.logging import Logger, level_by_name, logging_styles
 from cmdkit.app import Application, exit_status
 from cmdkit.cli import Interface, ArgumentError
 from cmdkit.config import Configuration, ConfigurationError
-from cmdkit.ansi import italic, COLOR_STDOUT, colorize_usage as default_colorize_usage
 from tqdm import tqdm
 
 
@@ -52,30 +51,6 @@ def print_exception(exc: Exception, status: int) -> int:
     """Log `exc` and return `status`."""
     log.critical(str(exc))
     return status
-
-
-# Look-around pattern to negate matches within quotation marks
-# Whole quotations are formatted together
-NOT_QUOTED = (
-    r'(?=([^"]*"[^"]*")*[^"]*$)' +
-    r"(?=([^']*'[^']*')*[^']*$)" +
-    r'(?=([^`]*`[^`]*`)*[^`]*$)'
-)
-
-
-def format_special_args(text: str) -> str:
-    """Formatting special arguments."""
-    metavars = ['COUNT', ]
-    metavars_pattern = r'\b(?P<arg>' + '|'.join(metavars) + r')\b'
-    return re.sub(metavars_pattern + NOT_QUOTED, italic(r'\g<arg>'), text)
-
-
-def colorize_usage(text: str) -> str:
-    """Apply additional formatting to usage/help text."""
-    if not COLOR_STDOUT:
-        return text
-    else:
-        return default_colorize_usage(format_special_args(text))
 
 
 USAGE: Final[str] = f"""\
