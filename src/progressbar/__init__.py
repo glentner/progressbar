@@ -34,7 +34,7 @@ cfg = Configuration.from_local(env=True, prefix=APPNAME.upper(), default={
     'clear': False,
     'ncols': None,
     'ascii': False,
-    'color': None,  # E.g., 'green', '00ff00'
+    'color': None,   # E.g., 'green', '#00ff00'
     'delay': 0.0,    # Seconds to delay
     'buffsize': '10M',
     'log': {
@@ -227,7 +227,7 @@ class PBar(Application):
         'k': 1_000,
         'm': 1_000_000,
         'b': 1_000_000_000,
-        'g': 1_000_000_000,  # alternate to 'b'
+        'g': 1_000_000_000,  # Alternate to 'b'
         't': 1_000_000_000_000,
     }
 
