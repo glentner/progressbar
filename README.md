@@ -11,13 +11,6 @@ Install
 pipx install git+https://github.com/glentner/progressbar.git
 ```
 
-Or on macOS
-
-```sh
-brew tap glentner/tap
-brew install pb
-```
-
 Usage
 -----
 
