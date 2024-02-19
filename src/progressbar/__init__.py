@@ -109,7 +109,7 @@ class PBar(Application):
     ascii_mode: bool = cfg.ascii
     interface.add_argument('-a, --ascii', action='store_true', dest='ascii_mode', default=ascii_mode)
 
-    clear_mode: bool = cfg.clear
+    clear_mode: bool = cfg.get('clear', False)  # NOTE: Issue #1
     interface.add_argument('-c', '--clear', action='store_true', dest='clear_mode', default=clear_mode)
 
     color: Optional[str] = cfg.color
