@@ -1,7 +1,16 @@
 pb
 ==
 
-Command-line progress bar for streaming files or lines of text.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+&nbsp;
+[![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-green.svg)](https://github.com/glentner/plot-cli)
+&nbsp;
+[![Python 3.12 | 3.13](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads)
+
+
+A simple command-line progress bar for streaming files or lines of text.
+
 This is simply an alternate front-end to [tqdm](https://github.com/tqdm/tqdm).
 
 Install
