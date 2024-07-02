@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "progressbar"
-version = "1.1.0"
+version = "1.2.0"
 description = "Command-line progress bar for streaming files"
 authors = ["Geoffrey Lentner <glentner@purdue.edu>"]
 readme = "README.md"
