@@ -22,7 +22,7 @@ pb = "progressbar:main"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-cmdkit = "2.7.4"
+cmdkit = "2.7.5"
 tqdm = "^4.66.1"
 
 [tool.poetry.group.dev.dependencies]
