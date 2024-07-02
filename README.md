@@ -4,7 +4,7 @@ pb
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 &nbsp;
-[![Version: 1.1.1](https://img.shields.io/badge/Version-1.1.1-green.svg)](https://github.com/glentner/plot-cli)
+[![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-green.svg)](https://github.com/glentner/progressbar)
 &nbsp;
 [![Python 3.12 | 3.13](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads)
 
@@ -73,4 +73,3 @@ Contributing
 This is finished software made for a narrow purpose.
 If you find a bug or think something obvious is missing,
 please feel free to open an issue or pull request with a fix.
-
