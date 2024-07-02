@@ -208,6 +208,9 @@ class PBar(Application):
 
     def check_filepaths(self: PBar) -> None:
         """Ensure all file arguments exist."""
+        if self.paths == ['@-', ]:
+            log.info('Reading file paths from <stdin>')
+            self.paths = [path for path in map(str.strip, sys.stdin)]
         if self.paths == ['-', ]:
             self.paths = None
         if self.paths:
