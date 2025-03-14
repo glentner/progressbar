@@ -4,9 +4,9 @@ pb
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 &nbsp;
-[![Version: 1.2.0](https://img.shields.io/badge/Version-1.2.0-green.svg)](https://github.com/glentner/progressbar)
+[![Version](https://img.shields.io/github/v/release/glentner/progressbar?sort=semver)](https://github.com/glentner/progressbar)
 &nbsp;
-[![Python 3.12 | 3.13](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads)
+[![Python Version](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads)
 
 
 A simple command-line progress bar for streaming files or lines of text.
@@ -16,8 +16,10 @@ This is simply an alternate front-end to [tqdm](https://github.com/tqdm/tqdm).
 Install
 -------
 
+The well-known [uv](https://docs.astral.sh/uv/) utility is the best way to install this program.
+
 ```sh
-pipx install git+https://github.com/glentner/progressbar.git
+uv tool install git+https://github.com/glentner/progressbar
 ```
 
 Usage
